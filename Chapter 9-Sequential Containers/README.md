@@ -16,3 +16,11 @@ Answer:
 (b) deque. Insertion and remove at either end of the deque is a fast operation, comparable to adding an element to a list or forward_list. On the other hand, inserting or removing elements other than at the back may be slow.
 (c) vector. no need to add or remove elements. The list and forward_list containers are designed for fast add and remove of elements in any position of the container. However, they do not support random excess to elements. The memory overhead for these two containers are oftern substantial. 
 
+Exercise 9.2: Define a list that holds elements that are deques that hold ints
+
+Answer:
+#include <list>
+#include <deque>
+  #include <iostream>
+using namespace std;
+list<deque<int>> list_hold_deques_of_ints;
