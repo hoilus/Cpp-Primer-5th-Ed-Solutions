@@ -71,3 +71,19 @@ while (iter1 != iter2) /* ... */
 ```
 #### operator < is not implemented in list, because list is a doubly linked list, whose memory is not necessarily continuous.
 
+## Exercise 9.7: 
+> #### What type should be used as the index into a vector of ints?
+
+## Answer:
+```
+vector<int>::size_type;
+```
+
+## Exercise 9.8: 
+> #### What type should be used to read elements in a list of strings? To write them?
+
+## Answer:
+```
+list<string>::const_iterator; // for reading
+list<strig>::iterator; // for writing
+```
