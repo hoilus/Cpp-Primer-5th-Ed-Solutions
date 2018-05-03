@@ -23,3 +23,21 @@ using namespace std;
 list<deque<int>> list_hold_deques_of_ints;
 ```
 
+## Exercise 9.3: 
+> #### What are the constraints on the iterators that form iterator ranges?
+
+## Answer:
+#### end must not precede begin in the same container.
+
+## Exercise 9.4: 
+> #### Write a function that takes a pair of iterators to a vector<int> and an int value. Look for that value in the range and return a bool indicating whether it was found.
+
+## Answer:
+```
+// from https://github.com/Mooophy/Cpp-Primer
+auto contains(vector<int>::const_iterator first, vector<int>::const_iterator last, int value) {
+    for(; first != last; ++first)
+        if(*first == value) return true;
+    return false;
+}
+```
