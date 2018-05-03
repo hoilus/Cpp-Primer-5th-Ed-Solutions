@@ -41,3 +41,33 @@ auto contains(vector<int>::const_iterator first, vector<int>::const_iterator las
     return false;
 }
 ```
+
+## Exercise 9.5: 
+> #### Rewrite the previous program to return an iterator to the requested element. Note that the program must handle the case where the
+element is not found.
+
+## Answer:
+```
+// from https://github.com/Mooophy/Cpp-Primer
+auto contains(vector<int>::const_iterator first, vector<int>::const_iterator last, int value) {
+    for(; first != last; ++first)
+        if(*first == value) return first;
+    return last;
+}
+```
+
+## Exercise 9.6: 
+> #### What is wrong with the following program? How might you correct it?
+```
+list<int> lst1;
+list<int>::iterator iter1 = lst1.begin(), iter2 = lst1.end();
+while (iter1 < iter2) /* ... */
+```
+
+## Answer:
+```
+...
+while (iter1 != iter2) /* ... */
+```
+#### operator < is not implemented in list, because list is a doubly linked list, whose memory is not necessarily continuous.
+
