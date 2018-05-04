@@ -99,14 +99,14 @@ cbegin returns a constant iterator that refers the first element in the containe
 > #### What are the types of the following four objects?
 
 ## Answer:
-'''
+```
 vector<int> v1;  // v1 is a vector container holding integer elements
 const vector<int> v2;  // v2 is a constant vector container holding integer elements
 auto it1 = v1.begin(), it2 = v2.begin();  // it1 is vector<int>::iterator
                                           // it2 is vector<int>::const_iterator
 auto it3 = v1.cbegin(), it4 = v2.cbegin();  // it3 is vector<int>::const_iterator
                                             // it4 is vector<int>::const_iterator
-'''
+```
 
 ## Exercise 9.11: 
 > #### Show an example of each of the six ways to create and initialize a vector. Explain what values each vector contains.
