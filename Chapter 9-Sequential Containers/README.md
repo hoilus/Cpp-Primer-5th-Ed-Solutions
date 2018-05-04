@@ -133,6 +133,15 @@ auto it3 = v1.cbegin(), it4 = v2.cbegin();  // it3 is vector<int>::const_iterato
     
 ## Answer:
 ```
+#include <iostream>
+#include <vector>
+#include <array>
+#include <list>
+
+using namespace std;
+
+int main()
+{
 list<int> list1(10, 1); // list size 10, all elements are 1
 vector<double> vec1(list1.begin(), list1.end()); // copy through iterators
 for (auto i : list1) cout << i << "  ";
@@ -146,4 +155,7 @@ for (auto i : vec2) cout << i << "  ";
 cout << endl;
 for (auto j : vec3) cout << j << "  ";
 cout << endl;
+
+return 0;
+}
 ```
