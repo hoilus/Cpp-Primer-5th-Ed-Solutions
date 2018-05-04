@@ -120,3 +120,30 @@ auto it3 = v1.cbegin(), it4 = v2.cbegin();  // it3 is vector<int>::const_iterato
 - vector<int> sam3(sam1); // copy vector sam1 to sam3
 - vector<double> sam4(sam2.begin(), sam2.end()); // copy via a pair of iterators, and convert element type
 ```
+
+## Exercise 9.12: 
+> #### Explain the differences between the constructor that takes a container to copy and the constructor that takes two iterators.
+
+## Answer:
+#### Copying container directly requires both have the same container and element type.
+#### Copying through iterators do not require same container or element type. 
+
+## Exercise 9.13: 
+> #### How would you initialize a vector<double> from a list<int>? From a vector<int>? Write code to check your answers.
+    
+## Answer:
+```
+list<int> list1(10, 1); // list size 10, all elements are 1
+vector<double> vec1(list1.begin(), list1.end()); // copy through iterators
+for (auto i : list1) cout << i << "  ";
+cout << endl;
+for (auto j : vec1) cout << j << "  ";
+cout << endl;
+
+vector<int> vec2 = {1, 2, 3, 4, 5};
+vector<double> vec3(vec2.begin(), vec2.end());
+for (auto i : vec2) cout << i << "  ";
+cout << endl;
+for (auto j : vec3) cout << j << "  ";
+cout << endl;
+```
