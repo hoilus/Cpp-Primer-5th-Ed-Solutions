@@ -87,3 +87,36 @@ vector<int>::size_type;
 list<string>::const_iterator; // for reading
 list<strig>::iterator; // for writing
 ```
+
+## Exercise 9.9: 
+> #### What is the difference between the begin and cbegin functions?
+
+## Answer:
+begin returns a nonconstant iterator that refers the first element in the container. 
+cbegin returns a constant iterator that refers the first element in the container.
+
+## Exercise 9.10: 
+> #### What are the types of the following four objects?
+
+## Answer:
+'''
+vector<int> v1;  // v1 is a vector container holding integer elements
+const vector<int> v2;  // v2 is a constant vector container holding integer elements
+auto it1 = v1.begin(), it2 = v2.begin();  // it1 is vector<int>::iterator
+                                          // it2 is vector<int>::const_iterator
+auto it3 = v1.cbegin(), it4 = v2.cbegin();  // it3 is vector<int>::const_iterator
+                                            // it4 is vector<int>::const_iterator
+'''
+
+## Exercise 9.11: 
+> #### Show an example of each of the six ways to create and initialize a vector. Explain what values each vector contains.
+
+## Answer:
+```
+- vector<int> sam0; // 0
+- vector<int> sam1 = {1, 2, 3};
+- vector<int> sam2(3, 10); // three int elements, each initialized to 10
+- vector<int> sam21(3); // three 0 elements
+- vector<int> sam3(sam1); // copy vector sam1 to sam3
+- vector<double> sam4(sam2.begin(), sam2.end()); // copy via a pair of iterators, and convert element type
+```
