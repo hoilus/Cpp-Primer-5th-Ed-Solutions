@@ -159,3 +159,47 @@ cout << endl;
 return 0;
 }
 ```
+
+## Exercise 9.14: 
+> #### Write a program to assign the elements from a list of char* pointers to C-style character strings to a vector of strings
+
+## Answer:
+```
+list<const char*> ltmp = {"absd", "nmks"};
+vector<string> vec;
+vec.assign(ltmp.begin(), ltmp.end());
+for (auto elem : vec) cout << elem << "  ";
+cout << endl;
+return 0;
+```
+    
+## Exercise 9.15: 
+> #### Write a program to determine whether two vector<int>s are equal.
+    
+## Answer:
+```
+    vector<int> vec1 = {1, 2, 3, 4, 5};
+    vector<int> vec2(5, 1);
+    vector<int> vec3 = {1, 2, 3, 4, 5};
+    cout << (vec1 == vec2 ? "true" : "false") << endl;
+    cout << (vec1 == vec3 ? "true" : "false") << endl;
+```
+
+## Exercise 9.16: 
+> #### Repeat the previous program, but compare elements in a list<int> to a vector<int>.
+
+## Answer:
+```
+    vector<int> vec2(5, 1);
+    list<int> lis1 = {1, 1, 1, 1, 1};
+    cout << (vector<int>(lis1.begin(), lis1.end()) == vec2 ? "true" : "false") << endl;
+```
+
+## Exercise 9.17: 
+> #### Assuming c1 and c2 are containers, what (if any) constraints does the following usage place on the types of c1 and c2? 
+> #### if (c1 < c2)
+
+## Answer:
+- Both element type of c1 and c2 support < operator.
+- All containers except the unordered associative containers.
+
