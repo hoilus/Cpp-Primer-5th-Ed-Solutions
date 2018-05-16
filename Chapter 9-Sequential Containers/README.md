@@ -265,3 +265,16 @@ void insert_str(forward_list<string>& list, string const& to_find, string const&
   list.insert_after(prev, to_insert);
 }
 ```
+
+## Exercise 9.29: 
+> ####  Given that vec holds 25 elements, what does vec.resize(100) do? What if we next wrote vec.resize(10)?
+    
+## Answer:
+#### vec.resize(100) will extend the orignal vec to size of 100, and all the added elements are zero.
+#### after we next wrote vec.resize(100), vec only keep the first 10 elements.
+
+## Exercise 9.30: 
+> ####  What, if any, restrictions does using the version of resize that takes a single argument place on the element type?
+    
+## Answer:
+#### If the container holds elements of a class type and resize adds elements, we must supply an initializer or the element type must have a default constructor.
