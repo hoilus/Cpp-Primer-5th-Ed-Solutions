@@ -231,3 +231,13 @@ while (iter != mid)
 #### They are the same and equal to the first element in c.
 
 ## [Exercise 9.24](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_24.cpp)
+
+## Exercise 9.25: 
+> ####  In the program on page 349 that erased a range of elements, what happens if elem1 and elem2 are equal? What if elem2 or both elem1 and elem2 are the off-the-end iterator?
+
+## Answer:
+- nothing happens if elem1 and elem2 are equal.
+- if elem2 is off-the-end, the code will delete all the elements from elem1 to the end.
+- if both elem1 and elem2 are off-the-end, nothing will happen.
+
+## [Exercise 9.26](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_26.cpp)
