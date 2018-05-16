@@ -222,4 +222,4 @@ while (iter != mid)
 ## Answer:
 - Endless loop since iter never change, thus iter will not equal to mid for ever.
 - mid will be invalid after insertion
-see my solutions [here](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_22.cpp).
+- see my solutions [here](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_22.cpp).
