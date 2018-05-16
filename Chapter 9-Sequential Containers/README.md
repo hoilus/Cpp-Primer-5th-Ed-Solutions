@@ -241,3 +241,6 @@ while (iter != mid)
 - if both elem1 and elem2 are off-the-end, nothing will happen.
 
 ## [Exercise 9.26](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_26.cpp)
+
+## [Exercise 9.27](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_27.cpp)
+
