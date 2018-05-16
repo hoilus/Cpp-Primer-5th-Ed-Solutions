@@ -302,3 +302,18 @@ iter = vi.insert(iter, *iter++); // segmentation fault.
 ```
 vi.insert(begin, 42); // crashed. invalid pointer.
 ```
+
+## Exercise 9.34: 
+> #### Assuming vi is a container of ints that includes even and odd values, predict the behavior of the following loop. After you’ve analyzed this loop, write a program to test whether your expectations were correct.
+```
+iter = vi.begin();
+while (iter != vi.end())
+ if (*iter % 2) 
+   iter = vi.insert(iter, *iter); 
+ ++iter;
+```
+
+## Answer:
+#### Infinite loop will start when the first even value is reached.
+#### Another '++iter' needs to be added into if, and then the loop will realize inserting even numbers in front of the original even value.
+#### check the revised code [here](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_34.cpp).
