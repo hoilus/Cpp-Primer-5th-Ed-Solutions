@@ -205,3 +205,9 @@ return 0;
 
 ## [Exercise 9.18](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_18.cpp)
 
+## [Exercise 9.19](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_19.cpp)
+
+## [Exercise 9.20](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_20.cpp)
+
+## [Exercise 9.21](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_21.cpp)
+
