@@ -287,3 +287,18 @@ void insert_str(forward_list<string>& list, string const& to_find, string const&
 iter += 2; // list and forward_list are linked lists, therefore, iterator can only increase continuously.
 ```
 #### check the revised code [here](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_31.cpp).
+
+## Exercise 9.32: 
+> ####  In the program onpage 354 would it be legal to write the call to insert as follows? If not, why not?
+```
+iter = vi.insert(iter, *iter++); // segmentation fault.
+```
+
+## Answer:
+#### Because "The order of evaluation of arguments is unspecified." As a result, after entering function insert, iter could be its original value or original value + 1 or even anything else, depending on how compiler implemented. (the original answer is [here](https://github.com/Mooophy/Cpp-Primer/blob/master/ch09/ex9_32.cpp))
+
+## Exercise 9.33: 
+> #### In the final example in this section what would happen if we did not assign the result of insert to begin? Write a program that omits this assignment to see if your expectation was correct.
+```
+vi.insert(begin, 42); // crashed. invalid pointer.
+```
