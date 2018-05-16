@@ -19,8 +19,11 @@ while (iter != mid()) {
     ++(iter = iv.insert(iter, 2 * some_val));
   ++iter;
 }
-for (auto iter = iv.cbegin(); iter != iv.cend(); ++iter)
-  cout << *iter << endl;
+
+for (auto i : iv)
+  cout << i << endl;
+//for (auto iter = iv.cbegin(); iter != iv.cend(); ++iter)
+//  cout << *iter << endl;
   
 return 0;
 }
