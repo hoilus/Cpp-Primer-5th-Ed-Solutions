@@ -244,3 +244,24 @@ while (iter != mid)
 
 ## [Exercise 9.27](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_27.cpp)
 
+## Exercise 9.28: 
+> ####  Write a function that takes a forward_list<string> and two additional string arguments. The function should find the first string and insert the second immediately following the first. If the first string is not found, then insert the second string at the end of the list.
+    
+## Answer:
+```
+void insert_str(forward_list<string>& list, string const& to_find, string const& to_insert) {
+  auto prev = list.before_begin();
+  auto curr = list.begin();
+  while (curr != list.end()) {
+    if (*curr == to_find) {
+      list.insert_after(curr, to_insert);
+      return;
+    }
+    else {
+      prev = curr;
+      ++curr;
+    }
+  }
+  list.insert_after(prev, to_insert);
+}
+```
