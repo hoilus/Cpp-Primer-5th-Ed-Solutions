@@ -278,3 +278,12 @@ void insert_str(forward_list<string>& list, string const& to_find, string const&
     
 ## Answer:
 #### If the container holds elements of a class type and resize adds elements, we must supply an initializer or the element type must have a default constructor.
+
+## Exercise 9.31: 
+> ####  The program on page 354 to remove even-valued elements and duplicate odd ones will not work on a list or forward_list. Why? Revise the program so that it works on these types as well.
+    
+## Answer:
+```
+iter += 2; // list and forward_list are linked lists, therefore, iterator can only increase continuously.
+```
+#### check the revised code [here](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_31.cpp).
