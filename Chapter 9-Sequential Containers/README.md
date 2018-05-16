@@ -211,3 +211,15 @@ return 0;
 
 ## [Exercise 9.21](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_21.cpp)
 
+## Exercise 9.22: 
+> #### Assuming iv is a vector of ints, what is wrong with the following program? How might you correct the problem(s)?
+```
+vector<int>::iterator iter = iv.begin(), mid = iv.begin() + iv.size()/2;
+while (iter != mid)
+ if (*iter == some_val) iv.insert(iter, 2 * some_val);
+```
+
+## Answer:
+- Endless loop since iter never change, thus iter will not equal to mid for ever.
+- mid will be invalid after insertion
+see my solutions [here](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_22.cpp).
