@@ -203,5 +203,5 @@ return 0;
 - Both element type of c1 and c2 support < operator.
 - All containers except the unordered associative containers.
 
-## Exercise 9.17:
+## [Exercise 9.18]()
 
