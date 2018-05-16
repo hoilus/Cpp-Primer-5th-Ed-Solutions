@@ -223,3 +223,11 @@ while (iter != mid)
 - Endless loop since iter never change, thus iter will not equal to mid for ever.
 - mid will be invalid after insertion
 - see my solutions [here](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_22.cpp).
+
+## Exercise 9.23: 
+> ####  In the first program in this section on page 346, what would the values of val, val2, val3, and val4 be if c.size() is 1?
+
+## Answer:
+#### They are the same and equal to the first element in c.
+
+## [Exercise 9.24](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_24.cpp)
