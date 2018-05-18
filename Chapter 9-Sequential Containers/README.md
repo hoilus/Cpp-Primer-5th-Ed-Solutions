@@ -378,3 +378,9 @@ svec.resize(svec.size()+svec.size()/2);
 - 1048                      2048
 
 ## [Exercise 9.41](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_41.cpp)
+
+## Exercise 9.42:
+> #### Given that you want to read a character at a time into a string, and you know that you need to read at least 100 characters, how might you improve the performance of your program?
+
+## Answer:
+- string.reserve(128); // allocate enough space
