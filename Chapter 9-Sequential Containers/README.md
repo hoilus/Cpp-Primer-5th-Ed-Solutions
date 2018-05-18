@@ -376,3 +376,5 @@ svec.resize(svec.size()+svec.size()/2);
 -  512                      1024
 - 1000                      2000
 - 1048                      2048
+
+## [Exercise 9.41](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_41.cpp)
