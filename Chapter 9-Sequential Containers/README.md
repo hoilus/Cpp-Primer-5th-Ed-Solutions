@@ -353,3 +353,26 @@ while (iter != vi.end())
         cout << "vec1's capacity is " << vec1.capacity() << " ." << endl;
     }
 ```
+
+## Exercise 9.39: 
+> #### Explain what the following program fragment does:
+```
+vector<string> svec;
+svec.reserve(1024); // pre-allocate 1024 spots to save the elements.
+string word;
+while (cin >> word) // read in words
+ svec.push_back(word); // svec's capacity will automatically increase if the number of read in words is larger than 1024.
+svec.resize(svec.size()+svec.size()/2);
+// resize() will add another svec.size()/2 elements initiated of " " to svec. 
+// if this exceeds capacity, it will also automatically increase to accomodate the new elements.
+```
+
+## Exercise 9.40: 
+> #### If the program in the previous exercise reads 256 words, what is its likely capacity after it is resized? What if it reads 512? 1,000? 1,048?
+
+## Answer:
+- words     capacity after resized
+-  256                      1024
+-  512                      1024
+- 1000                      2000
+- 1048                      2048
