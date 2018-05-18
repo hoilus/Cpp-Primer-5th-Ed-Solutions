@@ -317,3 +317,39 @@ while (iter != vi.end())
 #### Infinite loop will start when the first even value is reached.
 #### Another '++iter' needs to be added into if, and then the loop will realize inserting even numbers in front of the original even value.
 #### check the revised code [here](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_34.cpp).
+
+## Exercise 9.35: 
+> #### Explain the difference between a vector’s capacity and its size.
+
+## Answer:
+- vector's capacity: how many spots the vector has pre-located for storing elements.
+- vector's size: how many elements the vector has stored.
+- vector's size is always not larger than capacity.
+
+## Exercise 9.36: 
+> #### Can a container have a capacity less than its size?
+
+## Answer:
+#### No.
+
+## Exercise 9.37: 
+> #### Why don’t list or array have a capacity member?
+
+## Answer:
+- capacity member requires element memory is continuous and can be resized.
+- list is a doubly linked list, memory is not necessarily continous.
+- array has fixed size.
+
+## Exercise 9.38: 
+> #### Write a program to explore how vectors grow in the library you use.
+
+## Answer:
+```
+    vector<string> vec1;
+    string buffer;
+    while(cin >> buffer) {
+        vec1.push_back(buffer);
+        cout << "vec1's size is " << vec1.size() << " ." << endl;
+        cout << "vec1's capacity is " << vec1.capacity() << " ." << endl;
+    }
+```
