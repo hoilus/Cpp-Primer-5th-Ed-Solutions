@@ -392,3 +392,11 @@ svec.resize(svec.size()+svec.size()/2);
 ## [Exercise 9.45](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_45.cpp)
 
 ## [Exercise 9.46](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_46.cpp)
+
+## [Exercise 9.47](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_47.cpp)
+
+## Exercise 9.48:
+> #### Given the definitions of name and numbers on page 365, what does numbers.find(name) return?
+
+## Answer:
+#### string::npos
