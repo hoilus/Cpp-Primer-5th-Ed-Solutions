@@ -384,3 +384,7 @@ svec.resize(svec.size()+svec.size()/2);
 
 ## Answer:
 - string.reserve(128); // allocate enough space
+
+## [Exercise 9.43](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_43.cpp)
+
+## [Exercise 9.44](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_44.cpp)
