@@ -21,7 +21,7 @@ string full_name(string& s, string const& prefix, string const& suffix) {
 int main()
 {
     string name = {"Jessica"};
-    cout << full_name(name, "Ms.", "I") << endl;
+    cout << full_name(name, "Ms.", ", I.") << endl;
     
     return 1;
 }
