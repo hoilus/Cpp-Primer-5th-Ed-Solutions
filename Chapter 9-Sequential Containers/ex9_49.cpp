@@ -19,7 +19,7 @@ int main()
     string curr, longest;
     while (getline(cin, curr)) {
         my_letter.append(curr);
-        if (curr.substr(0,curr.size()-1).find_first_not_of(str) == string::npos)
+        if (curr.substr(0,curr.size()-1).find_first_not_of(str) == string::npos) // exclude space at the end of curr.
             longest = (longest.size() < curr.size() ? curr : longest);
     }
     cout << my_letter << endl;
