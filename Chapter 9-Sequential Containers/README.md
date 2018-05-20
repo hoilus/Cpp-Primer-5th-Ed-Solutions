@@ -400,3 +400,5 @@ svec.resize(svec.size()+svec.size()/2);
 
 ## Answer:
 #### string::npos
+
+## [Exercise 9.49](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_49.cpp)
