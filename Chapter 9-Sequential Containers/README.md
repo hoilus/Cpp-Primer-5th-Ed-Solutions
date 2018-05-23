@@ -406,3 +406,5 @@ svec.resize(svec.size()+svec.size()/2);
 ## [Exercise 9.50](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_50.cpp)
 
 ## [Exercise 9.51](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_51.cpp)
+
+## [Exercise 9.52](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_52.cpp)
