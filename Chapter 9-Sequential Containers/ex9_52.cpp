@@ -16,20 +16,18 @@ using namespace std;
 int main()
 {
     string paren_exp = "(()()))()";
-    char tmps = '1';
-    paren_exp[0] = char(1);
-    
     cout << "the original parenthesized expression is: " << paren_exp << endl;
     stack<int> paren_ind;
     int indx = 0;
     for (auto i : paren_exp) {
-        if (i == '(')
+        if (i == '(') {
             paren_ind.push(indx);
+        }
         if ((i == ')') and !paren_ind.empty()) {
             int tmp = paren_ind.top();
             paren_ind.pop();
-            paren_exp[indx] = (char)tmp;
-            paren_exp[tmp] = (char)tmp;
+            paren_exp[indx] = '0' + tmp;
+            paren_exp[tmp] = '0' + tmp;
         }
         ++indx;
     }
