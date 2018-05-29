@@ -52,3 +52,5 @@ testing occurs 1 times.
 this occurs 1 times.
 word. occurs 1 times.
 ```
+
+## [Exercise 11.4](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%2011-Associative%20Containers/ex11_04.cpp)
