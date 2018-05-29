@@ -17,7 +17,4 @@
 - Map is an associative container, and is a collection of key-value pairs. So define a __*Dictionary*__ using map is a good example.
 - Set is an associative container which simply collect keys. So a good example is __* a business might define a set named bad_checks to hold the names of individuals who have written bad checks. Before accepting a check, that business would query bad_checks to see whether the customer’s name was present.*__
 
-## Exercise 11.3 
-> #### Write your own version of the word-counting program.
-
-## Answer:
+## [Exercise 11.3](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%209-Sequential%20Containers/ex9_24.cpp)
