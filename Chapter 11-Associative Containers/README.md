@@ -54,3 +54,17 @@ word. occurs 1 times.
 ```
 
 ## [Exercise 11.4](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%2011-Associative%20Containers/ex11_04.cpp)
+
+## Exercise 11.5: 
+> #### Explain the difference between a map and a set. When might you use one or the other?
+
+## Answer:
+- Elements in a map are key-value pairs, while elements in a set only store keys.
+
+## Exercise 11.6: 
+> #### Explain the difference between a set and a list. When might you use one or the other?
+
+## Answer:
+- Set has unique keys, while elements in list can have the same content.
+
+## [Exercise 11.7](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%2011-Associative%20Containers/ex11_07.cpp)
