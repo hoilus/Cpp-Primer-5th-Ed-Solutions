@@ -24,8 +24,9 @@ int main()
     map<string, vector<string>> mapfam;
     addFaml(mapfam, "Hong", {"Jessica", "Evan"});
     addFaml(mapfam, "Zuo", {"AAA1", "BBBBBB1", "CCCCCC"});
+    addFaml(mapfam, "Hong", {"Chuqing", "Chuming"});
     for (const auto &w : mapfam)
-        cout << w.first << " occurs " << w.second[0] << endl;
+        cout << w.first << " family has " << w.second.size() << ((w.second.size() > 1) ? " children" : "child") << endl;
     
     return 0;
 }
