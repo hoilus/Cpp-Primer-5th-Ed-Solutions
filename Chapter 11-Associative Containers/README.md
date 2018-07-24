@@ -72,3 +72,5 @@ word. occurs 1 times.
 ## [Exercise 11.9 and 11.10](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%2011-Associative%20Containers/ex11_09_10.cpp)
 
 ## [Exercise 11.12 and 11.13](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%2011-Associative%20Containers/ex11_12_13.cpp)
+
+## [Exercise 11.14](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%2011-Associative%20Containers/ex11_14.cpp)
