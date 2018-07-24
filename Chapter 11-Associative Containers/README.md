@@ -68,3 +68,5 @@ word. occurs 1 times.
 - Set has unique keys, while elements in list can have the same content.
 
 ## [Exercise 11.7](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%2011-Associative%20Containers/ex11_07.cpp)
+
+## [Exercise 11.9 and 11.10](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%2011-Associative%20Containers/ex11_09_10.cpp)
