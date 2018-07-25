@@ -95,9 +95,8 @@ word. occurs 1 times.
 > #### Assuming c is a multiset of strings and v is a vector of strings, explain the following calls. Indicate whether each call is legal:
 
 ```
-// 
-copy(v.begin(), v.end(), inserter(c, c.end()));
-copy(v.begin(), v.end(), back_inserter(c));
-copy(c.begin(), c.end(), inserter(v, v.end()));
-copy(c.begin(), c.end(), back_inserter(v));
+copy(v.begin(), v.end(), inserter(c, c.end())); // legal
+copy(v.begin(), v.end(), back_inserter(c)); // illegal, no `push_back` in `set`
+copy(c.begin(), c.end(), inserter(v, v.end())); // legal
+copy(c.begin(), c.end(), back_inserter(v)); // legal
 ```
