@@ -74,3 +74,20 @@ word. occurs 1 times.
 ## [Exercise 11.12 and 11.13](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%2011-Associative%20Containers/ex11_12_13.cpp)
 
 ## [Exercise 11.14](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%2011-Associative%20Containers/ex11_14.cpp)
+
+## Exercise 11.15: 
+> #### What are the mapped_type, key_type, and value_type of a map from int to vector<int>?
+
+## Answer:
+- mapped_type: vector<int>
+- key_type: int
+- value_type: pair<const int, vector<int>>
+  
+  ## Exercise 11.16: 
+> #### Using a map iterator write an expression that assigns a value to an element.
+
+## Answer:
+- map<string, string> word_count = {{"dictionary", "xxx"}};
+- auto map_it = word_count.begin();
+- map_it->second = "a book to look for explanations";
+
