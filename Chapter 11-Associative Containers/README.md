@@ -111,3 +111,13 @@ copy(c.begin(), c.end(), back_inserter(v)); // legal
 
 ## Answer:
 - Directly fetch map element is easier to write and read than using insert. Because the latter method returns a pair for the containers with unique keys.
+
+ ## Exercise 11.21: 
+> #### Exercise 11.21: Assuming word_count is a map from string to size_t and word is a string, explain the following loop:
+
+```
+while (cin >> word) // read in word string
+  ++word_count.insert({word, 0}).first->second;
+// if word does not exist in word_count map, insert the key-value pair {word, 0} firstly, then increase the value to 1;
+// if word exists in word_count map, insert will not happen, but increase the value of the corresponding key by 1.
+```
