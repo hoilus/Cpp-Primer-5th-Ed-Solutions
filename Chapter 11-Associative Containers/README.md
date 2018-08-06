@@ -154,4 +154,18 @@ v[0] = 1; // error
 ## Answer:
 - Not Yet Answered!!
 
+## Exercise 11.27: 
+> #### What kinds of problems would you use count to solve? When might you use find instead?
+  
+## Answer:
+- count will loop over the whole multi-container.
+- find will return if it finds the first mathcing element. 
 
+## Exercise 11.28: 
+> #### Define and initialize a variable to hold the result of calling find on a map from string to vector of int.
+  
+## Answer:
+```
+string element("Hong");
+map<string, vector<int>>::iterator itr = word_count.find(element);
+```
