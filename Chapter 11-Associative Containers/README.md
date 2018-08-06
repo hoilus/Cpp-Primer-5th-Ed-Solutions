@@ -121,3 +121,12 @@ while (cin >> word) // read in word string
 // if word does not exist in word_count map, insert the key-value pair {word, 0} firstly, then increase the value to 1;
 // if word exists in word_count map, insert will not happen, but increase the value of the corresponding key by 1.
 ```
+
+## Exercise 11.22: 
+> #### Given a map<string, vector<int>>, write the types used as an argument and as the return value for the version of insert that inserts one element.
+  
+## Answer:
+- argument: pair<string, vector<int>>
+- return: pair<map<string, vector<int>>::iterator, bool>
+  
+## [Exercise 11.23](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%2011-Associative%20Containers/ex11_23.cpp)
