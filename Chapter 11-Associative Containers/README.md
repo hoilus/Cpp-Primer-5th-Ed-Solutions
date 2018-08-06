@@ -169,3 +169,16 @@ v[0] = 1; // error
 string element("Hong");
 map<string, vector<int>>::iterator itr = word_count.find(element);
 ```
+
+## Exercise 11.29: 
+> #### What do upper_bound, lower_bound, and equal_range return when you pass them a key that is not in the container?
+  
+## Answer:
+- if the key is not in the contianer, upper_bound and lower_bound returns the equal iterator at which the key can be inserted without disrupting the order.
+- equal-range will return a pair of iterators, in which the begin and end iterator are equal. And both can be used to insert the key.
+
+## Exercise 11.30: 
+> #### Explain the meaning of the operand pos.first->second used in the output expression of the final program in this section.
+  
+## Answer:
+- the first iterator in the returned pair of iterators by equal_bound, and then fetch the value of the iterator in the map.
