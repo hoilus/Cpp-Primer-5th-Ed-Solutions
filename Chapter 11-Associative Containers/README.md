@@ -130,7 +130,6 @@ while (cin >> word) // read in word string
 - return: pair<map<string, vector<int>>::iterator, bool>
   
 ## [Exercise 11.23](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%2011-Associative%20Containers/ex11_23.cpp)
-
   
 ## Exercise 11.24: 
 > #### What does the following program do?
@@ -140,6 +139,8 @@ map<int, int> m; //
 m[0] = 1; // add key-value pair {0, 1} into map
 ```
 
+## [Exercise 11.31 & 32](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%2011-Associative%20Containers/ex11_31_32.cpp)
+ 
 ## Exercise 11.25: 
 > #### Contrast the following program with the one in the previous exercise
   
