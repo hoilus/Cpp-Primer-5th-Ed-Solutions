@@ -100,3 +100,10 @@ copy(v.begin(), v.end(), back_inserter(c)); // illegal, no `push_back` in `set`
 copy(c.begin(), c.end(), inserter(v, v.end())); // legal
 copy(c.begin(), c.end(), back_inserter(v)); // legal
 ```
+
+ ## Exercise 11.18: 
+> #### Write the type of map_it from the loop on page 430 without using auto or decltype.
+
+## Answer:
+- map<const string, int>::iterator
+
