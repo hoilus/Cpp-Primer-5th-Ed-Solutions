@@ -107,3 +107,4 @@ copy(c.begin(), c.end(), back_inserter(v)); // legal
 ## Answer:
 - map<const string, int>::iterator
 
+## [Exercise 11.20](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%2011-Associative%20Containers/ex11_20.cpp)
