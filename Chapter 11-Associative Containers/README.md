@@ -138,8 +138,6 @@ while (cin >> word) // read in word string
 map<int, int> m; // 
 m[0] = 1; // add key-value pair {0, 1} into map
 ```
-
-## [Exercise 11.31 & 32](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%2011-Associative%20Containers/ex11_31_32.cpp)
  
 ## Exercise 11.25: 
 > #### Contrast the following program with the one in the previous exercise
@@ -183,3 +181,6 @@ map<string, vector<int>>::iterator itr = word_count.find(element);
   
 ## Answer:
 - the first iterator in the returned pair of iterators by equal_bound, and then fetch the value of the iterator in the map.
+
+
+## [Exercise 11.31 & 32](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%2011-Associative%20Containers/ex11_31_32.cpp)
