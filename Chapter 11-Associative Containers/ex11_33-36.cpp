@@ -44,6 +44,17 @@ map<string, string> buildMap(ifstream &map_file) {
     return trans_map;
 }
 
+const string &
+    transform(const string &s, const map<string, string> &m) {
+    // the actual map work; this part is the heart of the program
+    auto map_it = m.find(s);
+    // if the word is in the transformation map
+    if (map_it != m.cend())
+        return map_it->second; // use the replacement word
+    else
+        return s;               // otherwise return the original unchanged
+}
+
 int main()
 {
     multimap<string, string> author_works = {{"Princeton", "Textbook"}, {"Hong", "Book1"}, {"Hong", "Action2"}, {"Zuo", "Book"}};
