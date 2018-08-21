@@ -215,4 +215,5 @@ If a key word appears multiple time in the map_file
 > #### Our program does no checking on the validity of either input file. In particular, it assumes that the rules in the transformation file are all sensible. What would happen if a line in that file has a key, one space, and then the end of the line? Predict the behavior and then check it against your version of the program.
 
 ## Answer:
-- Subsript 
+- The corresponding key will be relaced by space in the word_transform output file. 
+- Thus, there must has a check of ``` if (value.size() > 1) ``` to make sure the above case will not be read into trans_map.
