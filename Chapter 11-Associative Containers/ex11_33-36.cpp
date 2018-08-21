@@ -57,25 +57,9 @@ const string &
 
 int main()
 {
-    multimap<string, string> author_works = {{"Princeton", "Textbook"}, {"Hong", "Book1"}, {"Hong", "Action2"}, {"Zuo", "Book"}};
+    ifstream ifs_map("../word_transformation_bad.txt"), ifs_content("../given_to_transform.txt");
+    if (ifs_map && ifs_content) word_transform(ifs_map, ifs_content);
+    else cerr << "cann't find the documents.\n";
     
-    //11.31
-    //string auth = "Hong";
-    string auth = "ING";
-    if (author_works.find(auth) != author_works.end())
-        author_works.erase(auth);
-    
-    //11.32
-    //multiset can only be sorted by its key, cannot sorted by val.
-    //sort(author_works.begin(), author_works.end());
-    map<string, multiset<string>> map_for_order;
-    for (const auto &w : author_works)
-        map_for_order[w.first].insert(w.second);
-    for (const auto &w : map_for_order) {
-        cout << w.first << "  ";
-        for (const auto &books : w.second)
-            cout << books << "  ";
-        cout << '\n';
-    }
     return 0;
 }
