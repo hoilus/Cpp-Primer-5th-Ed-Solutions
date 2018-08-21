@@ -197,4 +197,22 @@ const string &
     return m[s];
 }
 ```
-The above code won't compile because the subscript operator will insert an element if s does not exist in map. However, map is const.
+The above code won't compile because the subscript operator will insert an element if s does not exist in map. However, map is const here.
+
+## Exercise 11.35: 
+> #### In buildMap, what effect, if any, would there be from rewriting
+```
+trans_map[key] = value.substr(1);
+as trans_map.insert({key, value.substr(1)})?
+```
+
+## Answer:
+If a key word appears multiple time in the map_file
+- Subsript operator will put the last corresponding phrase into the trans_map;
+- Insert will put the first corresponding phrase into the trans_map.
+
+## Exercise 11.36: 
+> #### Our program does no checking on the validity of either input file. In particular, it assumes that the rules in the transformation file are all sensible. What would happen if a line in that file has a key, one space, and then the end of the line? Predict the behavior and then check it against your version of the program.
+
+## Answer:
+- Subsript 
