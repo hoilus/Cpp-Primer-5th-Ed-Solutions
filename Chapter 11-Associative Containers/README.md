@@ -192,5 +192,9 @@ map<string, vector<int>>::iterator itr = word_count.find(element);
 ## Answer:
 - If the code has been changed like below:
 ```
-
+const string &
+    transform(const string &s, const map<string, string> &m) {
+    return m[s];
+}
 ```
+The above code won't compile because the subscript operator will insert an element if s does not exist in map. However, map is const.
