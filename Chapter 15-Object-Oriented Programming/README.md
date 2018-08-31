@@ -15,3 +15,12 @@
 
 ## [Exercise 15.3](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%2015-Object-Oriented%20Programming/ex15p1_main.cpp)
 
+## Exercise 15.4: 
+> #### Which of the following declarations, if any, are incorrect? Explain why.
+
+```
+class Base { ... };
+(a) class Derived : public Derived { ... }; // wrong, class cannot derive from its own
+(b) class Derived : private Base { ... }; // wrong, this is a definition not declaration
+(c) class Derived : public Base; // wrong, declaration does not need list
+```
