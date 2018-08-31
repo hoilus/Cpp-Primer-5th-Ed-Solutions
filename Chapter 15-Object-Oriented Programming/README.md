@@ -13,5 +13,5 @@
 - Protected member can be accessed by base class, derived class, and friend class.
 - Private member can be accessed by base and friend class.
 
-## [Exercise 15.3](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%2011-Associative%20Containers/ex11_07.cpp)
+## [Exercise 15.3](https://github.com/hoilus/Cpp-Primer-5th-Ed-Solutions/blob/master/Chapter%2015-Object-Oriented%20Programming/ex15p1_main.cpp)
 
